@@ -8,12 +8,12 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <GoogleOAuthProvider clientId="1056917267864-3giqph089ubn68r2klnbau8kism7a65p.apps.googleusercontent.com">
   <React.StrictMode>
-    <SpeedInsights />
-    <GoogleOAuthProvider clientId="1056917267864-3giqph089ubn68r2klnbau8kism7a65p.apps.googleusercontent.com">
+    <SpeedInsights />    
       <App />
-    </GoogleOAuthProvider>
   </React.StrictMode>
+  </GoogleOAuthProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
