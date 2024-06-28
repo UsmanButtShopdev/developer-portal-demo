@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GoogleOAuthProvider } from '@react-oauth/google';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <SpeedInsights />
     <GoogleOAuthProvider clientId="AIzaSyBUynQQiEt39Ln73jLgtVbWb1YmqDRCMzM">
       <App />
     </GoogleOAuthProvider>
