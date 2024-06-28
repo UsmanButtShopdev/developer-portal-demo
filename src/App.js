@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("isDark", "false");
   }, [])
-  const [ selectedSegment, setSelectedSegment ] = useState('Preview');
+  const [ selectedSegment, setSelectedSegment ] = useState('HP with Auth');
   const [scalarTheme, setScalarTheme ] = useState('kepler');
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -63,7 +63,7 @@ function App() {
         defaultValue={selectedSegment}
         style={{ margin: "12px 0" }}
         onChange={(value) => setSelectedSegment(value)}
-        options={['JSON', 'Preview', 'V1', 'withAuth', 'HP Long API']}
+        options={['HP with Auth', 'HP large API']}
       />
        {/* <Segmented
         defaultValue={scalarTheme}

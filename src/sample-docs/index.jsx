@@ -60148,7 +60148,10 @@ const documentations = {
   withAuth: {
     content: petStoreWithAuth,
   },
-  "HP Long API": {
+  "HP with Auth": {
+    content: petStoreWithAuth,
+  },
+  "HP large API": {
     content: longAPI,
   }
 }
