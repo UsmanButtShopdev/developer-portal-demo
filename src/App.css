@@ -47,6 +47,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .darklight-reference {
@@ -74,6 +76,11 @@
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   border: 1px solid #ddd;
   border-radius: 12px;
+}
+
+.scalar-api-client {
+  max-height: 100vh !important;
+  border-radius: 0;
 }
 
 .demo-logo {

@@ -55,7 +55,7 @@ function App() {
 />
       </Header>
       <Content style={{
-        padding: "0 64px",
+        padding: "0 32px",
       }}>
         <div className='api-segment'>
           <span>API Version: </span>

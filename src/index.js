@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,10 +10,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <GoogleOAuthProvider clientId="1056917267864-3giqph089ubn68r2klnbau8kism7a65p.apps.googleusercontent.com">
-  <React.StrictMode>
-    <SpeedInsights />    
+    <React.StrictMode>
       <App />
-  </React.StrictMode>
+    </React.StrictMode>
+    <SpeedInsights />
+    <Analytics />
   </GoogleOAuthProvider>
 );
 
